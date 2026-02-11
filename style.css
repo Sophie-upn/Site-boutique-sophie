@@ -1,0 +1,37 @@
+body {
+
+	background-image: url(IMAGE/fond2.jpg);
+	background-size: 400%;
+}
+
+
+
+p{
+	color: midnightblue;
+	background: PapayaWhip;
+	font-family: Helvetica;
+}
+
+h2{
+	color: red;
+	font-family: Helvetica;
+}
+
+.special {
+	background: peachpuff;
+}
+
+h1{
+	font-family: Helvetica;
+	color: firebrick;}
+
+div {
+	border: 2px darkred solid;
+	border-radius: 15px;
+	width: 800px;
+	height: 200px;
+
+}
+
+
+
