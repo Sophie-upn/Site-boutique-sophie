@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Boutique Randonnée</title>
+
+	<style>
+		/* ================= RESET ================= */
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: Arial, sans-serif;
+		}
+
+		/* ================= FOND ================= */
+		body {
+	background: linear-gradient(-45deg, #F7D9BF, #BBD7FC, #F7D9BF, #EEC9A5);
+	background-size: 400% 400%;
+	animation: gradientAnimation 12s ease infinite;
+	text-align: center;
+}
+
+/* Animation fluide du dégradé */
+@keyframes gradientAnimation {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+		/* ================= TITRE ================= */
+		h1 {
+	margin: 40px 0;
+	font-size: 36px;
+	color: #333;
+	position: relative;
+	display: inline-block;
+	animation: titleFade 1.5s ease-out;
+}
+
+/* Animation d’apparition douce */
+@keyframes titleFade {
+	from {
+		opacity: 0;
+		transform: translat
+
+
+		/* ================= MENU ================= */
+		nav {
+			background: white;
+			padding: 15px;
+			box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+			display: inline-block;
+			border-radius: 12px;
+		}
+
+		nav ul {
+			list-style: none;
+		}
+
+		nav ul li {
+			position: relative;
+		}
+
+		nav ul li a {
+			display: block;
+			padding: 12px 20px;
+			text-decoration: none;
+			color: #333;
+			font-weight: bold;
+			transition: 0.3s;
+		}
+
+		nav ul li a:hover {
+			background-color: #333;
+			color: white;
+			border-radius: 8px;
+		}
+
+		/* ================= MENU DÉROULANT ================= */
+		nav ul li ul {
+			display: none;
+			position: absolute;
+			top: 45px;
+			left: 0;
+			background: white;
+			border-radius: 10px;
+			box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+			min-width: 200px;
+			animation: slideDown 0.4s ease forwards;
+		}
+
+		nav ul li:hover ul {
+			display: block;
+		}
+
+		nav ul li ul li a {
+			padding: 10px;
+		}
+
+		@keyframes slideDown {
+			from { opacity: 0; transform: translateY
