@@ -107,4 +107,5 @@
 		}
 
 		@keyframes slideDown {
-			from { opacity: 0; transform: translateY
+			from { opacity: 0; transform: translateY }
+		}

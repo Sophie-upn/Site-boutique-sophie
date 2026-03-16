@@ -1,0 +1,79 @@
+/* Fond animé global */
+body {
+	margin: 0;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	font-family: Arial, sans-serif;
+	background: linear-gradient(-45deg, #F7D9BF, #BBD7FC, #F7D9BF, #EEC9A5);
+	background-size: 400% 400%;
+	animation: gradientBG 12s ease infinite;
+}
+
+/* Animation du dégradé */
+@keyframes gradientBG {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+/* Titre */
+h1 {
+	margin: 60px 0;
+	font-size: 36px;
+	color: white;
+	position: relative;
+	display: inline-block;
+	opacity: 0;
+	animation: titleFade 1.5s ease-out forwards, float 4s ease-in-out infinite 1.5s;
+	text-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Apparition douce */
+@keyframes titleFade {
+	from {
+		opacity: 0;
+		transform: translateY(-30px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+/* Effet flottant léger */
+@keyframes float {
+	0% { transform: translateY(0); }
+	50% { transform: translateY(-8px); }
+	100% { transform: translateY(0); }
+}
+
+/* Reflet lumineux discret */
+h1::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: -75%;
+	width: 50%;
+	height: 100%;
+	background: linear-gradient(
+		120deg,
+		rgba(255, 255, 255, 0) 0%,
+		rgba(255, 255, 255, 0.6) 50%,
+		rgba(255, 255, 255, 0) 100%
+	);
+	transform: skewX(-20deg);
+	animation: shine 3s infinite 3s;
+}
+
+@keyframes shine {
+	0% { left: -75%; }
+	100% { left: 125%; }
+}
